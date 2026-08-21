@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PKCIC - Implementasi 4K+Shitsuke</title>
+<title>Implementasi PKCIC</title>
 
 <style>
 * {
@@ -16,83 +16,91 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #0b2b4c, #1563a8);
     color: white;
+    min-height: 100vh;
 }
 
-.header {
-    text-align: center;
-    padding: 35px 20px 20px;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-.header p {
-    margin: 10px 0 0;
-    color: #d9e4ef;
-    font-size: 18px;
-}
-
-.content {
-    max-width: 1200px;
+.container {
+    max-width: 1400px;
     margin: auto;
-    padding: 20px;
+    padding: 35px 50px 40px;
+    text-align: center;
 }
 
-.card {
+.logo {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 52px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin: 12px 0 45px;
+    font-size: 24px;
+    color: #d9e4ef;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.photo-card {
     background: white;
-    color: #16324f;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-.card h2 {
-    margin-top: 0;
-    color: #1563a8;
-}
-
-.infographic {
+.photo-card img {
     width: 100%;
     display: block;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.back {
-    display: block;
-    width: fit-content;
-    margin: 30px auto 40px;
-    padding: 14px 28px;
-    border: 1px solid white;
-    border-radius: 25px;
+.back-btn {
+    margin-top: 45px;
+    padding: 18px 55px;
+    background: transparent;
     color: white;
-    text-decoration: none;
+    border: 2px solid rgba(255,255,255,0.7);
+    border-radius: 50px;
+    font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.back:hover {
-    background: white;
-    color: #1563a8;
+.back-btn:hover {
+    background: rgba(255,255,255,0.12);
 }
 
-@media (max-width: 600px) {
-    .header h1 {
-        font-size: 28px;
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        padding: 25px 20px;
     }
 
-    .header p {
-        font-size: 15px;
+    h1 {
+        font-size: 34px;
     }
 
-    .content {
-        padding: 12px;
+    .subtitle {
+        font-size: 19px;
     }
 
-    .card {
-        padding: 15px;
+    .gallery {
+        grid-template-columns: 1fr;
     }
 }
 </style>
@@ -100,32 +108,50 @@ body {
 
 <body>
 
-<div class="header">
-    <h1>🏢 PKCIC</h1>
-    <p>IMPLEMENTASI 4K+SHITSUKE</p>
-</div>
+<div class="container">
 
-<div class="content">
+    <div class="logo">🏭</div>
 
-    <div class="card">
-        <h2>DOKUMENTASI IMPLEMENTASI PKCIC</h2>
+    <h1>PKCIC</h1>
 
-        <p>
-            Berikut adalah dokumentasi implementasi
-            4K+Shitsuke di area PKCIC.
-        </p>
-
-        <img
-            src="ChatGPT Image Aug 21, 2026, 10_07_49 AM.png"
-            alt="Galeri Implementasi 4K Shitsuke PKCIC"
-            class="infographic">
+    <div class="subtitle">
+        Dokumentasi Implementasi 4K+Shitsuke Area PKCIC
     </div>
 
-</div>
+    <div class="gallery">
 
-<a href="implementasi.html" class="back">
-    ← KEMBALI KE IMPLEMENTASI
-</a>
+        <div class="photo-card">
+            <img src="pkcic1.jpg" alt="Implementasi PKCIC 1">
+        </div>
+
+        <div class="photo-card">
+            <img src="pkcic2.jpg" alt="Implementasi PKCIC 2">
+        </div>
+
+        <div class="photo-card">
+            <img src="pkcic3.jpg" alt="Implementasi PKCIC 3">
+        </div>
+
+        <div class="photo-card">
+            <img src="pkcic4.jpg" alt="Implementasi PKCIC 4">
+        </div>
+
+        <div class="photo-card">
+            <img src="pkcic5.jpg" alt="Implementasi PKCIC 5">
+        </div>
+
+        <div class="photo-card">
+            <img src="pkcic6.jpg" alt="Implementasi PKCIC 6">
+        </div>
+
+    </div>
+
+    <button class="back-btn"
+        onclick="window.location.replace('implementasi.html')">
+        ← KEMBALI KE IMPLEMENTASI
+    </button>
+
+</div>
 
 </body>
 </html>
