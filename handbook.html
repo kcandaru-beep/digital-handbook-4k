@@ -8,92 +8,369 @@
 
 <style>
 
+/* =========================
+   RESET
+========================= */
+
 * {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(135deg, #0b2b4c, #1563a8);
-    color: white;
+    color: #24384d;
 }
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 25px 50px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
 
 .header {
     text-align: center;
-    padding: 35px 20px 20px;
+    color: white;
+    margin-bottom: 35px;
 }
 
 .header h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 40px;
+    letter-spacing: 1px;
 }
 
 .header p {
     margin: 10px 0 0;
-    color: #d9e4ef;
     font-size: 18px;
+    color: #d9e4ef;
 }
 
-.content {
-    max-width: 950px;
-    margin: auto;
-    padding: 20px;
-}
+
+/* =========================
+   CARD UMUM
+========================= */
 
 .card {
-    background: white;
-    color: #16324f;
-    padding: 25px;
+    background: #f5f5f5;
+    border-radius: 22px;
+    padding: 28px;
     margin-bottom: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
 
-.card h2 {
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome h2 {
     margin-top: 0;
-    color: #1563a8;
+    color: #315f90;
+    font-size: 26px;
 }
 
-.sub {
+.welcome p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.prinsip {
+    font-size: 18px;
     font-weight: bold;
-    color: #555;
+    color: #2f4b68;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    color: #315f90;
+    font-size: 26px;
+    margin: 0 0 18px;
+}
+
+.section-subtitle {
+    font-size: 17px;
+    font-weight: bold;
+    color: #34495e;
     margin-bottom: 15px;
 }
 
-.item {
-    background: #f2f6fa;
-    padding: 14px;
-    margin: 10px 0;
-    border-left: 5px solid #1563a8;
-    border-radius: 7px;
+.description {
+    font-size: 17px;
+    line-height: 1.65;
+    margin-bottom: 22px;
 }
 
-.back {
-    display: block;
-    width: fit-content;
-    margin: 30px auto 40px;
-    padding: 14px 28px;
-    border: 1px solid white;
-    border-radius: 25px;
+
+/* =========================
+   DEFINITION BOX
+========================= */
+
+.definition {
+    background: #e9eef4;
+    border-left: 6px solid #315f90;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 22px;
+    line-height: 1.6;
+}
+
+.definition strong {
+    color: #173b60;
+}
+
+
+/* =========================
+   LANGKAH
+========================= */
+
+.step-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 14px;
+    color: #2f4b68;
+}
+
+.step-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.step {
+    background: #e7e9ed;
+    border-left: 6px solid #315f90;
+    border-radius: 10px;
+    padding: 13px 16px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   POINT LIST
+========================= */
+
+.point-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.point-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TWO COLUMN
+========================= */
+
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.info-box {
+    background: #e9eef4;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.info-box h3 {
+    margin-top: 0;
+    color: #315f90;
+    font-size: 20px;
+}
+
+.info-box ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.info-box li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   MANFAAT
+========================= */
+
+.benefit-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.benefit {
+    background: #e9eef4;
+    border-radius: 14px;
+    padding: 16px;
+    border-left: 5px solid #315f90;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.summary {
+    background: linear-gradient(135deg, #315f90, #183b60);
     color: white;
+}
+
+.summary h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+.summary p {
+    text-align: center;
+    color: #dce8f3;
+    line-height: 1.6;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.summary-item {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 12px;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.summary-item strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.summary-item span {
+    font-size: 13px;
+    color: #dce8f3;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 28px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.25s ease;
 }
 
-.back:hover {
+.btn-home {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-home:hover {
     background: white;
     color: #1563a8;
 }
 
-@media (max-width: 600px) {
+.btn-standard {
+    background: white;
+    color: #315f90;
+}
+
+.btn-standard:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+    margin-top: 35px;
+    color: #d9e4ef;
+    font-size: 15px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .container {
+        padding: 25px 15px 35px;
+    }
 
     .header h1 {
-        font-size: 28px;
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 16px;
     }
 
     .card {
-        padding: 20px;
+        padding: 22px 18px;
+    }
+
+    .section-title {
+        font-size: 23px;
+    }
+
+    .two-column,
+    .benefit-list {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
     }
 
 }
@@ -103,280 +380,627 @@ body {
 
 <body>
 
-<div class="header">
-
-    <h1>📘 DIGITAL HANDBOOK 4K+SHITSUKE</h1>
-
-    <p>TEAM LOGISTIC KARAWANG</p>
-
-</div>
+<div class="container">
 
 
-<div class="content">
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <div class="header">
+
+        <h1>📘 DIGITAL HANDBOOK 4K+SHITSUKE</h1>
+
+        <p>TEAM LOGISTIK KARAWANG</p>
+
+    </div>
 
 
-    <div class="card">
+    <!-- =========================
+         WELCOME
+    ========================== -->
+
+    <section class="card welcome">
 
         <h2>SELAMAT DATANG</h2>
 
         <p>
-            Digital Handbook ini menjadi media panduan dan referensi bersama
-            untuk membantu team memahami serta menerapkan Ketertiban,
-            Kerapihan, Kebersihan, Kelestarian, dan Kedisiplinan secara konsisten.
+            Digital Handbook 4K+Shitsuke ini menjadi media panduan dan
+            referensi bersama untuk membantu seluruh team memahami,
+            menerapkan, dan menjaga budaya kerja yang tertib,
+            rapi, bersih, rawat, serta disiplin secara konsisten.
         </p>
 
-        <p>
-            <strong>TERTIB • RAPI • BERSIH • RAWAT • RAJIN</strong>
+        <p class="prinsip">
+            TERTIB • RAPI • BERSIH • RAWAT • RAJIN
         </p>
 
-    </div>
+    </section>
 
 
-    <div class="card">
+    <!-- =========================
+         01 KETERTIBAN
+    ========================== -->
 
-        <h2>01. KETERTIBAN</h2>
+    <section class="card">
 
-        <div class="sub">
+        <h2 class="section-title">
+            01. KETERTIBAN
+        </h2>
+
+        <div class="section-subtitle">
             SEIRI | SORT | RINGKAS
         </div>
 
-        <p>
-            Menyingkirkan barang yang tidak diperlukan sehingga area kerja
-            hanya berisi barang yang benar-benar dibutuhkan.
+        <div class="definition">
+
+            <strong>Pengertian:</strong><br>
+
+            Ketertiban adalah kegiatan memilah dan menyingkirkan
+            barang yang tidak diperlukan sehingga area kerja hanya
+            berisi barang yang benar-benar dibutuhkan.
+
+        </div>
+
+        <p class="description">
+
+            Tujuan utama Ketertiban adalah mengurangi barang yang tidak
+            diperlukan, mencegah penumpukan, mempermudah aktivitas kerja,
+            serta menciptakan area kerja yang lebih aman dan efisien.
+
         </p>
 
-        <h3>5 LANGKAH KETERTIBAN</h3>
 
-        <div class="item">
-            ① Cek barang di area kerja
+        <div class="step-title">
+            5 LANGKAH KETERTIBAN
         </div>
 
-        <div class="item">
-            ② Pisahkan barang yang diperlukan dan tidak diperlukan
+        <div class="step-list">
+
+            <div class="step">
+                ① Cek seluruh barang yang berada di area kerja
+            </div>
+
+            <div class="step">
+                ② Pisahkan barang yang diperlukan dan tidak diperlukan
+            </div>
+
+            <div class="step">
+                ③ Berikan Red Tag pada barang yang perlu dievaluasi
+            </div>
+
+            <div class="step">
+                ④ Tentukan lokasi penyimpanan atau pembuangan
+            </div>
+
+            <div class="step">
+                ⑤ Pindahkan barang sesuai ketentuan
+            </div>
+
         </div>
 
-        <div class="item">
-            ③ Berikan Red Tag pada barang yang dievaluasi
+
+        <div class="two-column">
+
+            <div class="info-box">
+
+                <h3>CONTOH KONDISI TIDAK TERTIB</h3>
+
+                <ul>
+                    <li>Barang rusak masih berada di area kerja</li>
+                    <li>Dokumen lama menumpuk tanpa fungsi</li>
+                    <li>Material tidak terpakai bercampur dengan material aktif</li>
+                    <li>Peralatan yang sudah tidak digunakan tetap disimpan</li>
+                </ul>
+
+            </div>
+
+            <div class="info-box">
+
+                <h3>HASIL YANG DIHARAPKAN</h3>
+
+                <ul>
+                    <li>Area kerja lebih lega</li>
+                    <li>Barang mudah dikontrol</li>
+                    <li>Risiko salah penggunaan berkurang</li>
+                    <li>Aktivitas kerja lebih efisien</li>
+                </ul>
+
+            </div>
+
         </div>
 
-        <div class="item">
-            ④ Tentukan lokasi penyimpanan atau pembuangan
+    </section>
+
+
+    <!-- =========================
+         02 KERAPIHAN
+    ========================== -->
+
+    <section class="card">
+
+        <h2 class="section-title">
+            02. KERAPIHAN
+        </h2>
+
+        <div class="section-subtitle">
+            SEITON | SET IN ORDER | RAPI
         </div>
 
-        <div class="item">
-            ⑤ Pindahkan barang sesuai ketentuan
+        <div class="definition">
+
+            <strong>Pengertian:</strong><br>
+
+            Kerapihan adalah kegiatan menata barang yang diperlukan
+            pada lokasi yang tepat sehingga mudah ditemukan,
+            digunakan, dan dikembalikan kembali.
+
         </div>
 
-    </div>
+        <p class="description">
 
+            Prinsip utama Kerapihan adalah setiap barang harus memiliki
+            tempat yang jelas dan setiap tempat harus memiliki identitas
+            yang jelas.
 
-    <div class="card">
-
-        <h2>02. KERAPIHAN</h2>
-
-        <div class="sub">
-            SEITON | SYSTEMATIZE | RAPIH
-        </div>
-
-        <p>
-            Segala sesuatu diletakkan sesuai posisi yang ditetapkan sehingga
-            siap digunakan saat diperlukan.
         </p>
 
-        <h3>3 LANGKAH KERAPIHAN</h3>
 
-        <div class="item">
-
-            ① Rancang metode penempatan barang agar mudah didapatkan.
-
+        <div class="step-title">
+            LANGKAH PENERAPAN KERAPIHAN
         </div>
 
-        <div class="item">
+        <div class="step-list">
 
-            ② Tempatkan barang pada tempat yang telah dirancang
-            dan disediakan.
+            <div class="step">
+                ① Tentukan lokasi penyimpanan setiap barang
+            </div>
 
-        </div>
+            <div class="step">
+                ② Kelompokkan barang berdasarkan jenis dan fungsi
+            </div>
 
-        <div class="item">
+            <div class="step">
+                ③ Gunakan label atau identitas yang mudah dibaca
+            </div>
 
-            ③ Berikan label atau identifikasi untuk mempermudah penggunaan
-            maupun pengembalian.
+            <div class="step">
+                ④ Atur barang berdasarkan frekuensi penggunaan
+            </div>
 
-        </div>
-
-
-        <h3>3 PRINSIP "MUDAH"</h3>
-
-
-        <div class="item">
-
-            <strong>MUDAH DITEMUKAN</strong><br><br>
-
-            Item dapat ditemukan dengan cepat.
+            <div class="step">
+                ⑤ Pastikan barang dikembalikan ke lokasi semula
+            </div>
 
         </div>
 
 
-        <div class="item">
+        <div class="two-column">
 
-            <strong>MUDAH DIAMBIL</strong><br><br>
+            <div class="info-box">
 
-            Item mudah dijangkau saat diperlukan.
+                <h3>PRINSIP KERAPIHAN</h3>
+
+                <ul>
+                    <li>Barang mudah dicari</li>
+                    <li>Barang mudah diambil</li>
+                    <li>Barang mudah digunakan</li>
+                    <li>Barang mudah dikembalikan</li>
+                </ul>
+
+            </div>
+
+            <div class="info-box">
+
+                <h3>CONTOH IMPLEMENTASI</h3>
+
+                <ul>
+                    <li>Label rak dan lokasi</li>
+                    <li>Penandaan area penyimpanan</li>
+                    <li>Visual identification</li>
+                    <li>Penempatan barang sesuai standar</li>
+                </ul>
+
+            </div>
 
         </div>
 
+    </section>
 
-        <div class="item">
 
-            <strong>MUDAH DIKEMBALIKAN</strong><br><br>
+    <!-- =========================
+         03 KEBERSIHAN
+    ========================== -->
 
-            Setelah digunakan, item kembali ke tempatnya.
+    <section class="card">
+
+        <h2 class="section-title">
+            03. KEBERSIHAN
+        </h2>
+
+        <div class="section-subtitle">
+            SEISO | SHINE | BERSIH
+        </div>
+
+        <div class="definition">
+
+            <strong>Pengertian:</strong><br>
+
+            Kebersihan adalah kegiatan membersihkan area kerja,
+            peralatan, fasilitas, dan lingkungan sekaligus
+            melakukan pemeriksaan untuk menemukan kondisi abnormal.
 
         </div>
 
-    </div>
+        <p class="description">
 
+            Membersihkan bukan hanya membuat area terlihat bersih.
+            Melalui kegiatan Kebersihan, kita dapat menemukan
+            kebocoran, kerusakan, potensi bahaya, dan kondisi abnormal
+            sebelum menjadi masalah yang lebih besar.
 
-    <div class="card">
-
-        <h2>03. KEBERSIHAN</h2>
-
-        <div class="sub">
-            SEISO | SHINE | RESIK
-        </div>
-
-        <p>
-            Membersihkan peralatan dan area kerja agar tetap terjaga
-            dalam kondisi baik.
         </p>
 
-        <h3>PANDUAN UTAMA</h3>
 
-        <div class="item">
+        <div class="step-title">
+            LANGKAH PENERAPAN KEBERSIHAN
+        </div>
 
-            Cari sumber dan penyebab kotoran.
+        <div class="step-list">
+
+            <div class="step">
+                ① Tentukan area dan objek yang harus dibersihkan
+            </div>
+
+            <div class="step">
+                ② Bersihkan sesuai standar yang telah ditentukan
+            </div>
+
+            <div class="step">
+                ③ Periksa kondisi abnormal saat melakukan pembersihan
+            </div>
+
+            <div class="step">
+                ④ Laporkan kondisi yang memerlukan perbaikan
+            </div>
+
+            <div class="step">
+                ⑤ Jaga kebersihan secara rutin dan berkelanjutan
+            </div>
 
         </div>
 
-        <div class="item">
 
-            Tetapkan tindakan pencegahan.
+        <div class="two-column">
+
+            <div class="info-box">
+
+                <h3>AREA YANG PERLU DIPERHATIKAN</h3>
+
+                <ul>
+                    <li>Lantai dan jalur kerja</li>
+                    <li>Rak dan area penyimpanan</li>
+                    <li>Peralatan kerja</li>
+                    <li>Meja dan fasilitas kerja</li>
+                </ul>
+
+            </div>
+
+            <div class="info-box">
+
+                <h3>PERIKSA SAAT MEMBERSIHKAN</h3>
+
+                <ul>
+                    <li>Debu dan kotoran</li>
+                    <li>Kebocoran</li>
+                    <li>Kerusakan fasilitas</li>
+                    <li>Potensi bahaya</li>
+                </ul>
+
+            </div>
 
         </div>
 
-    </div>
+    </section>
 
 
-    <div class="card">
+    <!-- =========================
+         04 RAWAT
+    ========================== -->
 
-        <h2>04. KELESTARIAN</h2>
+    <section class="card">
 
-        <div class="sub">
+        <h2 class="section-title">
+            04. RAWAT
+        </h2>
+
+        <div class="section-subtitle">
             SEIKETSU | STANDARDIZE | RAWAT
         </div>
 
-        <p>
-            Menjaga kondisi tertib, rapi, dan bersih dengan membakukannya
-            menjadi standar kerja.
+        <div class="definition">
+
+            <strong>Pengertian:</strong><br>
+
+            Rawat adalah kegiatan mempertahankan kondisi Ketertiban,
+            Kerapihan, dan Kebersihan melalui standar kerja yang
+            jelas dan diterapkan secara konsisten.
+
+        </div>
+
+        <p class="description">
+
+            Setelah area kerja menjadi tertib, rapi, dan bersih,
+            kondisi tersebut harus dijaga agar tidak kembali
+            ke kondisi sebelumnya. Karena itu diperlukan
+            standar, visualisasi, dan evaluasi secara rutin.
+
         </p>
 
-        <h3>PANDUAN UTAMA</h3>
 
-        <div class="item">
-            Standar penempatan
+        <div class="step-title">
+            CARA MENJAGA STANDAR
         </div>
 
-        <div class="item">
-            Identifikasi
+        <div class="step-list">
+
+            <div class="step">
+                ① Buat standar kondisi area kerja
+            </div>
+
+            <div class="step">
+                ② Gunakan visual management sebagai panduan
+            </div>
+
+            <div class="step">
+                ③ Tentukan jadwal pemeriksaan rutin
+            </div>
+
+            <div class="step">
+                ④ Lakukan evaluasi dan perbaikan jika ditemukan gap
+            </div>
+
+            <div class="step">
+                ⑤ Pastikan standar dipahami seluruh anggota team
+            </div>
+
         </div>
 
-        <div class="item">
-            SOP
+
+        <div class="two-column">
+
+            <div class="info-box">
+
+                <h3>CONTOH STANDAR</h3>
+
+                <ul>
+                    <li>Foto kondisi standar</li>
+                    <li>Label dan identitas area</li>
+                    <li>Checklist pemeriksaan</li>
+                    <li>Standar penempatan barang</li>
+                </ul>
+
+            </div>
+
+            <div class="info-box">
+
+                <h3>TUJUAN RAWAT</h3>
+
+                <ul>
+                    <li>Menjaga kondisi yang sudah baik</li>
+                    <li>Mencegah kondisi kembali berantakan</li>
+                    <li>Menyamakan cara kerja</li>
+                    <li>Mempermudah evaluasi</li>
+                </ul>
+
+            </div>
+
         </div>
 
-        <div class="item">
-            Komunikasi
+    </section>
+
+
+    <!-- =========================
+         SHITSUKE
+    ========================== -->
+
+    <section class="card">
+
+        <h2 class="section-title">
+            05. SHITSUKE
+        </h2>
+
+        <div class="section-subtitle">
+            SUSTAIN | DISIPLIN | RAJIN
         </div>
 
-        <div class="item">
-            Jadwal
+        <div class="definition">
+
+            <strong>Pengertian:</strong><br>
+
+            Shitsuke adalah membangun kebiasaan dan disiplin
+            untuk menjalankan standar yang telah ditetapkan
+            secara konsisten tanpa harus selalu diingatkan.
+
         </div>
+
+        <p class="description">
+
+            Shitsuke merupakan kunci keberlanjutan dari seluruh
+            aktivitas 4K. Ketertiban, Kerapihan, Kebersihan,
+            dan Rawat tidak akan bertahan apabila tidak didukung
+            oleh kebiasaan dan kedisiplinan seluruh anggota team.
+
+        </p>
+
+
+        <div class="step-title">
+            CARA MEMBANGUN SHITSUKE
+        </div>
+
+        <div class="step-list">
+
+            <div class="step">
+                ① Mulai dari diri sendiri
+            </div>
+
+            <div class="step">
+                ② Berikan contoh kepada orang lain
+            </div>
+
+            <div class="step">
+                ③ Jalankan standar secara konsisten
+            </div>
+
+            <div class="step">
+                ④ Saling mengingatkan dengan cara yang positif
+            </div>
+
+            <div class="step">
+                ⑤ Jadikan 4K sebagai budaya kerja sehari-hari
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MANFAAT
+    ========================== -->
+
+    <section class="card">
+
+        <h2 class="section-title">
+            MANFAAT PENERAPAN 4K+SHITSUKE
+        </h2>
+
+        <div class="benefit-list">
+
+            <div class="benefit">
+                ✓ Area kerja lebih tertib dan terorganisasi
+            </div>
+
+            <div class="benefit">
+                ✓ Barang lebih mudah ditemukan dan dikontrol
+            </div>
+
+            <div class="benefit">
+                ✓ Risiko kecelakaan dan kesalahan kerja berkurang
+            </div>
+
+            <div class="benefit">
+                ✓ Waktu kerja menjadi lebih efektif dan efisien
+            </div>
+
+            <div class="benefit">
+                ✓ Lingkungan kerja lebih nyaman dan aman
+            </div>
+
+            <div class="benefit">
+                ✓ Standar kerja lebih mudah diterapkan
+            </div>
+
+            <div class="benefit">
+                ✓ Masalah lebih cepat ditemukan
+            </div>
+
+            <div class="benefit">
+                ✓ Budaya disiplin dan continuous improvement meningkat
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         RINGKASAN
+    ========================== -->
+
+    <section class="card summary">
+
+        <h2>RINGKASAN 4K + SHITSUKE</h2>
+
+        <p>
+            Penerapan 4K+Shitsuke bukan hanya kegiatan membersihkan
+            atau merapikan area kerja. Ini adalah cara membangun
+            lingkungan kerja yang aman, nyaman, efisien, dan produktif.
+        </p>
+
+        <div class="summary-grid">
+
+            <div class="summary-item">
+
+                <strong>KETERTIBAN</strong>
+
+                <span>Pilah yang diperlukan</span>
+
+            </div>
+
+            <div class="summary-item">
+
+                <strong>KERAPIHAN</strong>
+
+                <span>Atur pada tempatnya</span>
+
+            </div>
+
+            <div class="summary-item">
+
+                <strong>KEBERSIHAN</strong>
+
+                <span>Bersihkan dan periksa</span>
+
+            </div>
+
+            <div class="summary-item">
+
+                <strong>RAWAT</strong>
+
+                <span>Jaga dengan standar</span>
+
+            </div>
+
+            <div class="summary-item">
+
+                <strong>SHITSUKE</strong>
+
+                <span>Disiplin dan konsisten</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <div class="navigation">
+
+        <a href="index.html" class="btn btn-home">
+            ← KEMBALI KE MENU UTAMA
+        </a>
+
+        <a href="standarisasi.html" class="btn btn-standard">
+            LANJUT KE STANDARISASI →
+        </a>
 
     </div>
 
 
-    <div class="card">
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
-        <h2>05. SHITSUKE</h2>
+    <div class="footer">
 
-        <div class="sub">
-            SUSTAIN | RAJIN | KEDISIPLINAN
-        </div>
-
-        <p>
-            Pemeliharaan kedisiplinan pribadi masing-masing pekerja
-            dalam menjalankan seluruh tahap 4K+Shitsuke.
-        </p>
+        Continuous Improvement • Discipline • Standardization
 
     </div>
-
-
-    <div class="card">
-
-        <h2>MANFAAT 4K+SHITSUKE</h2>
-
-        <div class="item">
-
-            Meningkatkan produktivitas karena pengaturan tempat kerja
-            lebih efisien.
-
-        </div>
-
-        <div class="item">
-
-            Meningkatkan kenyamanan karena tempat kerja selalu bersih
-            dan menjadi luas atau lapang.
-
-        </div>
-
-        <div class="item">
-
-            Mengurangi bahaya di tempat kerja karena kualitas tempat kerja
-            yang baik.
-
-        </div>
-
-        <div class="item">
-
-            Menambah penghematan karena menghilangkan berbagai pemborosan
-            di tempat kerja.
-
-        </div>
-
-    </div>
-
-
-    <div class="card">
-
-        <h2>PENYUSUN</h2>
-
-        <p>
-            Kisti Candaru Ahmad • Bambang Wijaya K • Angela Berliani Basuki
-        </p>
-
-        <p>
-            Usman Dwi Ananto • Aji Nugroho • Ratno • Tika • Purnama • Putu Witra P
-        </p>
-
-    </div>
-
-
-    <a href="index.html" class="back">
-
-        ← KEMBALI KE MENU
-
-    </a>
 
 
 </div>
