@@ -1,110 +1,195 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Digital Handbook 4K - Shitsuke</title>
+<title>Digital Handbook 4K</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+* {
+    box-sizing: border-box;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0b2b4c, #1563a8);
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0b2b4c, #1563a8);
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 35px 50px 40px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 52px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin: 12px 0 55px;
+    font-size: 26px;
+    color: #d9e4ef;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: #ffffff;
+    color: #294b6b;
+    text-decoration: none;
+    min-height: 270px;
+    padding: 45px 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #f2f6fa;
+}
+
+.icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin: 0 0 15px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 20px;
+    color: #5c6670;
+}
+
+/* Tombol IMPLEMENTASI */
+.implementasi {
+    grid-column: 1 / -1;
+    min-height: 220px;
+    background: #ffffff;
+}
+
+.implementasi h2 {
+    color: #1563a8;
+}
+
+.footer {
+    margin-top: 35px;
+    color: #d9e4ef;
+    font-size: 15px;
+}
+
+@media (max-width: 700px) {
 
     .container {
-      padding: 30px;
-      max-width: 700px;
-      width: 100%;
-    }
-
-    .logo {
-      font-size: 55px;
-      margin-bottom: 20px;
+        padding: 25px 20px;
     }
 
     h1 {
-      font-size: 46px;
-      margin: 0 0 15px;
-      letter-spacing: 1px;
-    }
-
-    h2 {
-      font-size: 24px;
-      font-weight: normal;
-      margin: 0 0 40px;
-      color: #d9e4ef;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 18px 36px;
-      background: white;
-      color: #17466f;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-      border-radius: 50px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      background: #f2f2f2;
-    }
-
-    .footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #d9e4ef;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
         font-size: 34px;
-      }
-
-      h2 {
-        font-size: 20px;
-      }
     }
-  </style>
+
+    .subtitle {
+        font-size: 19px;
+        margin-bottom: 35px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        min-height: 210px;
+        padding: 30px 20px;
+    }
+
+    .card h2 {
+        font-size: 25px;
+    }
+
+    .implementasi {
+        grid-column: auto;
+    }
+}
+</style>
 </head>
 
 <body>
 
-  <div class="container">
+<div class="container">
 
     <div class="logo">📘</div>
 
     <h1>DIGITAL HANDBOOK 4K</h1>
 
-    <h2>
-      SHITSUKE<br>
-      Team Logistic Karawang
-    </h2>
-
-    <a href="welcome.html" class="btn">
-      BUKA DIGITAL HANDBOOK →
-    </a>
-
-    <div class="footer">
-      Continuous Improvement • Discipline • Standardization
+    <div class="subtitle">
+        SHITSUKE • Team Logistic Karawang
     </div>
 
-  </div>
+    <div class="menu">
+
+        <a href="handbook.html" class="card">
+            <div class="icon">📖</div>
+            <h2>HAND BOOK 4K</h2>
+            <p>Informasi dan panduan utama</p>
+        </a>
+
+        <a href="standarisasi.html" class="card">
+            <div class="icon">📋</div>
+            <h2>STANDARISASI</h2>
+            <p>Standard kerja dan aturan</p>
+        </a>
+
+        <a href="kaizen.html" class="card">
+            <div class="icon">🎯</div>
+            <h2>KAIZEN</h2>
+            <p>Continuous Improvement</p>
+        </a>
+
+        <a href="visual.html" class="card">
+            <div class="icon">📊</div>
+            <h2>VISUAL MANAGEMENT</h2>
+            <p>Informasi visual area kerja</p>
+        </a>
+
+        <a href="implementasi.html" class="card implementasi">
+            <div class="icon">🏭</div>
+            <h2>IMPLEMENTASI</h2>
+            <p>Dokumentasi implementasi 4K+Shitsuke</p>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        Continuous Improvement • Discipline • Standardization
+    </div>
+
+</div>
 
 </body>
 </html>
