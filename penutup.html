@@ -7,90 +7,87 @@
 <title>Kunci Sukses 4K + Shitsuke</title>
 
 <style>
+
 * {
     box-sizing: border-box;
 }
 
-html,
 body {
     margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background: #102c49;
+    background: linear-gradient(135deg, #0b2b4c, #1563a8);
+    min-height: 100vh;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* CONTAINER UTAMA */
 
-/* =========================
-   HALAMAN PENUTUP
-========================= */
-
-.penutup-page {
+.container {
     width: 100%;
     max-width: 1400px;
-    background: #ffffff;
-    overflow: hidden;
+    margin: auto;
+    padding: 30px 20px 40px;
 }
 
-/* GAMBAR MASTER */
+/* GAMBAR PENUTUP */
 
-.master-image {
+.image-box {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.30);
+}
+
+.image-box img {
     display: block;
     width: 100%;
     height: auto;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    border-radius: 10px;
 }
 
-/* =========================
-   TOMBOL KEMBALI
-========================= */
+/* TOMBOL KEMBALI */
 
-.back-area {
-    width: 100%;
-    background: #102c49;
-    padding: 25px 20px 35px;
+.back-wrap {
     text-align: center;
+    margin-top: 35px;
 }
 
-.back-button {
+.back {
     display: inline-block;
-    padding: 14px 32px;
-    border: 1px solid #d7e4ef;
-    border-radius: 30px;
-
-    color: #ffffff;
+    padding: 14px 28px;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
     text-decoration: none;
-
-    font-size: 16px;
     font-weight: bold;
-    letter-spacing: 0.3px;
-
-    transition: 0.25s ease;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
-.back-button:hover {
-    background: #ffffff;
-    color: #102c49;
+.back:hover {
+    background: white;
+    color: #1563a8;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE HP */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
-    .back-area {
-        padding: 20px 15px 28px;
+    .container {
+        padding: 20px 8px 30px;
     }
 
-    .back-button {
+    .image-box {
+        padding: 4px;
+        border-radius: 10px;
+    }
+
+    .image-box img {
+        border-radius: 6px;
+    }
+
+    .back {
         font-size: 14px;
         padding: 12px 24px;
     }
@@ -98,34 +95,28 @@ body {
 }
 
 </style>
+
 </head>
 
 <body>
 
-<!-- =========================
-     HALAMAN PENUTUP
-========================= -->
+<div class="container">
 
-<div class="penutup-page">
+    <div class="image-box">
 
-    <img
-        src="ChatGPT Image Aug 21, 2026, 07_08_28 PM(2).png"
-        alt="Kunci Sukses 4K + Shitsuke"
-        class="master-image"
-    >
+        <img
+            src="ChatGPT Image Aug 21, 2026, 07_08_28 PM.png"
+            alt="Kunci Sukses 4K + Shitsuke">
 
-</div>
+    </div>
 
+    <div class="back-wrap">
 
-<!-- =========================
-     KEMBALI KE IMPLEMENTASI
-========================= -->
+        <a href="implementasi.html" class="back">
+            ← KEMBALI KE IMPLEMENTASI
+        </a>
 
-<div class="back-area">
-
-    <a href="implementasi.html" class="back-button">
-        ← KEMBALI KE IMPLEMENTASI
-    </a>
+    </div>
 
 </div>
 
