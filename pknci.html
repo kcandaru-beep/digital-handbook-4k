@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Implementasi PKNCI</title>
+<title>PKNCI - Implementasi 4K+Shitsuke</title>
 
 <style>
 * {
@@ -20,136 +20,106 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
-    padding: 35px 50px 40px;
+    padding: 30px 20px 40px;
     text-align: center;
 }
 
-.logo {
-    font-size: 48px;
-    margin-bottom: 5px;
+.header {
+    margin-bottom: 30px;
 }
 
-h1 {
+.header h1 {
     margin: 0;
-    font-size: 52px;
-    letter-spacing: 1px;
+    font-size: 38px;
 }
 
-.subtitle {
-    margin: 12px 0 45px;
-    font-size: 24px;
+.header p {
+    margin: 10px 0 0;
     color: #d9e4ef;
+    font-size: 18px;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.photo-card {
+.image-box {
     background: white;
+    padding: 15px;
     border-radius: 20px;
-    padding: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.30);
 }
 
-.photo-card img {
-    width: 100%;
+.image-box img {
     display: block;
+    width: 100%;
+    height: auto;
+    max-width: 1100px;
+    margin: auto;
     border-radius: 12px;
 }
 
-.back-btn {
-    margin-top: 45px;
-    padding: 18px 55px;
-    background: transparent;
+.back {
+    display: block;
+    width: fit-content;
+    margin: 35px auto 0;
+    padding: 14px 28px;
+    border: 1px solid white;
+    border-radius: 25px;
     color: white;
-    border: 2px solid rgba(255,255,255,0.7);
-    border-radius: 50px;
-    font-size: 20px;
+    text-decoration: none;
     font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+    font-size: 16px;
 }
 
-.back-btn:hover {
-    background: rgba(255,255,255,0.12);
+.back:hover {
+    background: white;
+    color: #1563a8;
 }
 
-@media (max-width: 900px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
     .container {
-        padding: 25px 20px;
+        padding: 25px 15px 35px;
     }
 
-    h1 {
-        font-size: 34px;
+    .header h1 {
+        font-size: 30px;
     }
 
-    .subtitle {
-        font-size: 19px;
+    .header p {
+        font-size: 16px;
     }
 
-    .gallery {
-        grid-template-columns: 1fr;
+    .image-box {
+        padding: 8px;
+        border-radius: 12px;
+    }
+
+    .image-box img {
+        border-radius: 8px;
     }
 }
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <div class="logo">🏭</div>
-
-    <h1>PKNCI</h1>
-
-    <div class="subtitle">
-        Dokumentasi Implementasi 4K+Shitsuke Area PKNCI
+    <div class="header">
+        <h1>🏭 PKNCI</h1>
+        <p>IMPLEMENTASI 4K+SHITSUKE</p>
     </div>
 
-    <div class="gallery">
+    <div class="image-box">
 
-        <div class="photo-card">
-            <img src="pknci1.jpg" alt="Implementasi PKNCI 1">
-        </div>
-
-        <div class="photo-card">
-            <img src="pknci2.jpg" alt="Implementasi PKNCI 2">
-        </div>
-
-        <div class="photo-card">
-            <img src="pknci3.jpg" alt="Implementasi PKNCI 3">
-        </div>
-
-        <div class="photo-card">
-            <img src="pknci4.jpg" alt="Implementasi PKNCI 4">
-        </div>
-
-        <div class="photo-card">
-            <img src="pknci5.jpg" alt="Implementasi PKNCI 5">
-        </div>
-
-        <div class="photo-card">
-            <img src="pknci6.jpg" alt="Implementasi PKNCI 6">
-        </div>
+        <img src="pknci.jpg" alt="Implementasi PKNCI">
 
     </div>
 
-    <button class="back-btn"
-        onclick="window.location.replace('implementasi.html')">
+    <a href="implementasi.html" class="back">
         ← KEMBALI KE IMPLEMENTASI
-    </button>
+    </a>
 
 </div>
 
