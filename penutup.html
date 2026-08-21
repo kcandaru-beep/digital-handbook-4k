@@ -8,530 +8,116 @@
 
 <style>
 
-/* ========================================
-   RESET
-======================================== */
-
 * {
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
+html,
 body {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background: #eef1f5;
-    color: #314052;
+    background: #102d4b;
 }
 
+/* CONTAINER HALAMAN */
 
-/* ========================================
-   HALAMAN UTAMA
-======================================== */
-
-.page {
+.penutup-page {
     width: 100%;
     min-height: 100vh;
-    background:
-        radial-gradient(circle at 5% 25%, rgba(33,76,120,0.15) 0 2px, transparent 3px),
-        radial-gradient(circle at 95% 75%, rgba(33,76,120,0.12) 0 2px, transparent 3px),
-        linear-gradient(180deg, #f5f6f8 0%, #e9edf2 100%);
-    background-size: 22px 22px, 22px 22px, auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #102d4b;
 }
 
+/* GAMBAR UTAMA */
 
-/* ========================================
-   HEADER
-======================================== */
-
-.header {
-    background: #29496b;
-    color: white;
-    text-align: center;
-    padding: 45px 20px 40px;
-    border-bottom: 4px solid #b8cee2;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.header p {
-    margin: 12px 0 0;
-    font-size: 18px;
-    color: #dce6ef;
-    letter-spacing: 0.5px;
-}
-
-
-/* ========================================
-   CONTAINER
-======================================== */
-
-.container {
+.penutup-image {
     width: 100%;
-    max-width: 1500px;
-    margin: auto;
-    padding: 35px 45px 55px;
-}
-
-
-/* ========================================
-   KUNCI SUKSES
-======================================== */
-
-.success-box {
-    background: rgba(255,255,255,0.75);
-    border: 2px solid #b8cee2;
-    border-radius: 24px;
-    padding: 18px 30px;
-    margin-bottom: 20px;
-    box-shadow: 0 6px 18px rgba(30,60,90,0.08);
-}
-
-.success-item {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    min-height: 52px;
-    border-bottom: 2px solid #c6d7e6;
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-
-.success-item:last-child {
-    border-bottom: none;
-}
-
-.check {
-    width: 34px;
-    height: 34px;
-    flex-shrink: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #294f7b;
-    color: white;
-
-    border-radius: 50%;
-    font-size: 20px;
-}
-
-
-/* ========================================
-   TERIMA KASIH
-======================================== */
-
-.thank-line {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    margin: 5px 0 35px;
-}
-
-.thank-line::before,
-.thank-line::after {
-    content: "";
-    height: 2px;
-    flex: 1;
-    background: #315c87;
-}
-
-.thank-title {
-    background: linear-gradient(135deg, #385f88, #1d3c5d);
-    color: white;
-
-    padding: 13px 65px;
-    border-radius: 30px;
-
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 2px;
-
-    white-space: nowrap;
-}
-
-
-/* ========================================
-   GRID PERSONIL
-======================================== */
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px 45px;
-}
-
-
-/* ========================================
-   CARD
-======================================== */
-
-.person-card {
-    position: relative;
-
-    display: grid;
-    grid-template-columns: 220px 1fr;
-
-    min-height: 245px;
-
-    background: rgba(255,255,255,0.82);
-
-    border: 2px solid #b9d0e2;
-    border-radius: 24px;
-
-    overflow: hidden;
-
-    box-shadow:
-        8px 8px 0 rgba(90,120,150,0.10),
-        0 6px 18px rgba(20,50,80,0.08);
-}
-
-
-/* ========================================
-   FOTO
-======================================== */
-
-.photo-area {
-    position: relative;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-    padding: 18px 12px 25px;
-}
-
-.photo-frame {
-    width: 185px;
-    height: 190px;
-
-    overflow: hidden;
-
-    border-radius: 18px 18px 12px 12px;
-
-    background: #e5e7ea;
-}
-
-.photo-frame img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    object-position: center top;
+    max-width: 1200px;
+    height: auto;
 
     display: block;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    background: white;
 }
 
+/* AREA TOMBOL */
 
-/* ========================================
-   NAMA
-======================================== */
-
-.name-tag {
-    position: absolute;
-
-    left: 12px;
-    bottom: 12px;
-
-    width: 190px;
-
-    padding: 11px 12px;
-
-    background: linear-gradient(135deg, #315d89, #183d63);
-
-    color: white;
-
-    text-align: center;
-
-    border-radius: 18px;
-
-    font-size: 16px;
-    font-weight: bold;
-
-    letter-spacing: 0.4px;
-
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-
-/* ========================================
-   QUOTE
-======================================== */
-
-.quote-area {
-    position: relative;
+.navigation {
+    width: 100%;
+    padding: 25px 15px 35px;
 
     display: flex;
+    justify-content: center;
+
+    background: #102d4b;
+}
+
+/* TOMBOL KEMBALI */
+
+.back-button {
+
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
 
-    padding: 28px 32px 35px 8px;
-}
+    padding: 14px 32px;
 
-.quote-area::before {
-    content: "“";
-
-    position: absolute;
-
-    top: 20px;
-    left: 0;
-
-    color: #315d89;
-
-    font-size: 52px;
-    font-family: Georgia, serif;
-
-    font-weight: bold;
-}
-
-.quote {
-    margin: 22px 0 0;
-
-    padding-left: 20px;
-
-    font-size: 19px;
-    line-height: 1.55;
-
-    color: #354353;
-
-    letter-spacing: 0.2px;
-}
-
-.quote-area::after {
-    content: "”";
-
-    position: absolute;
-
-    right: 20px;
-    bottom: 4px;
-
-    color: #315d89;
-
-    font-size: 50px;
-    font-family: Georgia, serif;
-
-    font-weight: bold;
-}
-
-
-/* ========================================
-   FOOTER TEAM
-======================================== */
-
-.team-footer {
-    margin-top: 45px;
-
-    background: #29496b;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 30px 20px;
-}
-
-.team-footer h2 {
-    margin: 0;
-
-    font-size: 30px;
-
-    letter-spacing: 1px;
-}
-
-.team-footer p {
-    margin: 12px 0 0;
-
-    font-size: 14px;
-
-    color: #d8e3ed;
-
-    letter-spacing: 0.5px;
-}
-
-
-/* ========================================
-   TOMBOL KEMBALI
-======================================== */
-
-.back-wrap {
-    text-align: center;
-    margin-top: 35px;
-}
-
-.back {
-    display: inline-block;
-
-    padding: 13px 32px;
-
-    background: #29496b;
-
-    color: white;
-
-    border: 2px solid #29496b;
+    border: 1px solid #dce7f0;
     border-radius: 30px;
+
+    color: #ffffff;
+
+    background: transparent;
 
     text-decoration: none;
 
     font-size: 16px;
     font-weight: bold;
 
-    transition: 0.2s ease;
+    transition: 0.25s ease;
 }
 
-.back:hover {
-    background: white;
-    color: #29496b;
-}
+.back-button:hover {
 
+    background: #ffffff;
 
-/* ========================================
-   RESPONSIVE TABLET
-======================================== */
+    color: #173d63;
 
-@media (max-width: 1100px) {
-
-    .container {
-        padding: 30px 25px 45px;
-    }
-
-    .person-card {
-        grid-template-columns: 180px 1fr;
-        min-height: 220px;
-    }
-
-    .photo-frame {
-        width: 155px;
-        height: 170px;
-    }
-
-    .name-tag {
-        width: 160px;
-        font-size: 14px;
-    }
-
-    .quote {
-        font-size: 16px;
-    }
-
+    transform: translateY(-2px);
 }
 
 
-/* ========================================
-   RESPONSIVE HP
-======================================== */
+/* RESPONSIVE HP */
 
-@media (max-width: 750px) {
+@media screen and (max-width: 768px) {
 
-    .header {
-        padding: 30px 15px;
+    .penutup-image {
+        width: 100%;
+        max-width: 100%;
     }
 
-    .header h1 {
-        font-size: 26px;
-        letter-spacing: 1px;
+    .navigation {
+        padding: 20px 15px 30px;
     }
 
-    .header p {
+    .back-button {
+        width: 100%;
+        max-width: 320px;
+
+        padding: 14px 20px;
+
         font-size: 15px;
-    }
-
-    .container {
-        padding: 20px 15px 35px;
-    }
-
-    .success-box {
-        padding: 12px 15px;
-    }
-
-    .success-item {
-        font-size: 14px;
-        gap: 10px;
-        min-height: 48px;
-    }
-
-    .check {
-        width: 27px;
-        height: 27px;
-        font-size: 15px;
-    }
-
-    .thank-title {
-        font-size: 20px;
-        padding: 10px 25px;
-    }
-
-    .team-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .person-card {
-        grid-template-columns: 125px 1fr;
-        min-height: 175px;
-        border-radius: 18px;
-    }
-
-    .photo-area {
-        padding: 12px 8px 28px;
-    }
-
-    .photo-frame {
-        width: 110px;
-        height: 125px;
-        border-radius: 12px;
-    }
-
-    .name-tag {
-        left: 7px;
-        bottom: 7px;
-
-        width: 115px;
-
-        padding: 8px 5px;
-
-        font-size: 11px;
-    }
-
-    .quote-area {
-        padding: 15px 18px 25px 0;
-    }
-
-    .quote-area::before {
-        font-size: 38px;
-        top: 5px;
-    }
-
-    .quote {
-        margin-top: 15px;
-
-        padding-left: 13px;
-
-        font-size: 13px;
-        line-height: 1.45;
-    }
-
-    .quote-area::after {
-        font-size: 36px;
-        right: 8px;
-    }
-
-    .team-footer h2 {
-        font-size: 20px;
-    }
-
-    .team-footer p {
-        font-size: 11px;
     }
 
 }
@@ -542,344 +128,32 @@ body {
 
 <body>
 
-<div class="page">
+<div class="penutup-page">
+
+    <!--
+    GAMBAR MASTER PENUTUP
+    Pastikan file penutup.png
+    berada satu folder dengan penutup.html
+    -->
+
+    <img
+        src="penutup.png"
+        alt="Kunci Sukses 4K + Shitsuke"
+        class="penutup-image"
+    >
 
 
-    <!-- ===============================
-         HEADER
-    ================================ -->
+    <!-- TOMBOL KEMBALI -->
 
-    <div class="header">
+    <div class="navigation">
 
-        <h1>KUNCI SUKSES 4K + SHITSUKE DI OFFICE</h1>
+        <a href="implementasi.html" class="back-button">
 
-        <p>
-            SHITSUKE • Team Logistik Karawang
-        </p>
+            ← KEMBALI KE IMPLEMENTASI
+
+        </a>
 
     </div>
-
-
-    <div class="container">
-
-
-        <!-- ===============================
-             5 KUNCI SUKSES
-        ================================ -->
-
-        <div class="success-box">
-
-            <div class="success-item">
-                <div class="check">✓</div>
-                <div>HARUS MULAI DARI SAYA</div>
-            </div>
-
-            <div class="success-item">
-                <div class="check">✓</div>
-                <div>SAYA HARUS MEMBERI CONTOH DAHULU</div>
-            </div>
-
-            <div class="success-item">
-                <div class="check">✓</div>
-                <div>SAYA SELAMAT, LINGKUNGAN AKAN IKUT SELAMAT</div>
-            </div>
-
-            <div class="success-item">
-                <div class="check">✓</div>
-                <div>INGATKAN YANG LAIN UNTUK MENERAPKAN 4K + SHITSUKE</div>
-            </div>
-
-            <div class="success-item">
-                <div class="check">✓</div>
-                <div>4K + SHITSUKE UNTUK MASA DEPAN YANG LEBIH PRODUKTIF</div>
-            </div>
-
-        </div>
-
-
-        <!-- ===============================
-             TERIMA KASIH
-        ================================ -->
-
-        <div class="thank-line">
-            <div class="thank-title">TERIMA KASIH</div>
-        </div>
-
-
-        <!-- ===============================
-             TEAM PERSONIL
-        ================================ -->
-
-        <div class="team-grid">
-
-
-            <!-- 1 BAMBANG -->
-
-            <div class="person-card">
-
-                <div class="photo-area">
-
-                    <div class="photo-frame">
-                        <img src="images/bambang.jpg" alt="Bambang Wijaya K">
-                    </div>
-
-                    <div class="name-tag">
-                        Bambang Wijaya K
-                    </div>
-
-                </div>
-
-                <div class="quote-area">
-
-                    <p class="quote">
-                        4K+Shitsuke bukan hanya sekedar cita-cita,
-                        tetapi sebuah tindakan. Lakukan dengan disiplin
-                        dan rasa tanggung jawab.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- 2 ANGELA -->
-
-            <div class="person-card">
-
-                <div class="photo-area">
-
-                    <div class="photo-frame">
-                        <img src="images/angela.jpg" alt="Angela Berlian">
-                    </div>
-
-                    <div class="name-tag">
-                        Angela Berlian
-                    </div>
-
-                </div>
-
-                <div class="quote-area">
-
-                    <p class="quote">
-                        Jalankan 4K+Shitsuke sebagai kebiasaan yang rutin
-                        sehingga dengan sendirinya akan menjadi budaya
-                        yang melekat pada diri kita.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- 3 KISTI -->
-
-            <div class="person-card">
-
-                <div class="photo-area">
-
-                    <div class="photo-frame">
-                        <img src="images/kisti.jpg" alt="Kisti Candaru">
-                    </div>
-
-                    <div class="name-tag">
-                        Kisti Candaru
-                    </div>
-
-                </div>
-
-                <div class="quote-area">
-
-                    <p class="quote">
-                        Menjalankan 4K+Shitsuke tidak bisa sendirian
-                        tetapi harus dilakukan bersama-sama.
-                        Semoga dengan komitmen bersama kita bisa
-                        menjalankannya dengan baik.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- 4 AJI -->
-
-            <div class="person-card">
-
-                <div class="photo-area">
-
-                    <div class="photo-frame">
-                        <img src="images/aji.jpg" alt="Aji Nugroho">
-                    </div>
-
-                    <div class="name-tag">
-                        Aji Nugroho
-                    </div>
-
-                </div>
-
-                <div class="quote-area">
-
-                    <p class="quote">
-                        Lingkungan kantor yang bersih adalah hasil
-                        dari kerja keras orang-orang yang menjaga
-                        kelestarian dan kebersihan lingkungan sekitar.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- 5 USMAN -->
-
-            <div class="person-card">
-
-                <div class="photo-area">
-
-                    <div class="photo-frame">
-                        <img src="images/usman.jpg" alt="Usman D Anamto">
-                    </div>
-
-                    <div class="name-tag">
-                        Usman D Anamto
-                    </div>
-
-                </div>
-
-                <div class="quote-area">
-
-                    <p class="quote">
-                        Kebersihan adalah bagian dari kemuliaan.
-                        Tanamkan semangat 4K+Shitsuke pada diri sendiri
-                        dan lingkungan sekitar. Salam 4K.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- 6 RATNO -->
-
-            <div class="person-card">
-
-                <div class="photo-area">
-
-                    <div class="photo-frame">
-                        <img src="images/ratno.jpg" alt="Ratno">
-                    </div>
-
-                    <div class="name-tag">
-                        Ratno
-                    </div>
-
-                </div>
-
-                <div class="quote-area">
-
-                    <p class="quote">
-                        Orang-orang yang beradab dan berilmu adalah
-                        mereka yang menjaga lingkungan supaya tetap
-                        bersih dan enak untuk ditinggali.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- 7 TIKA -->
-
-            <div class="person-card">
-
-                <div class="photo-area">
-
-                    <div class="photo-frame">
-                        <img src="images/tika.jpg" alt="Tika Purnama">
-                    </div>
-
-                    <div class="name-tag">
-                        Tika Purnama
-                    </div>
-
-                </div>
-
-                <div class="quote-area">
-
-                    <p class="quote">
-                        Jalankan 4K+Shitsuke secara disiplin sehingga
-                        menjadi kebiasaan yang positif yang membuat
-                        tubuh, pikiran dan lingkungan rapi, bersih
-                        dan nyaman.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- 8 PUTU -->
-
-            <div class="person-card">
-
-                <div class="photo-area">
-
-                    <div class="photo-frame">
-                        <img src="images/putu.jpg" alt="Putu Witra P">
-                    </div>
-
-                    <div class="name-tag">
-                        Putu Witra P
-                    </div>
-
-                </div>
-
-                <div class="quote-area">
-
-                    <p class="quote">
-                        Tempat kerja yang aman dan nyaman tergantung
-                        dari seberapa disiplin kita dalam menjalankan
-                        4K+Shitsuke dengan baik dan benar.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- ===============================
-             KEMBALI KE IMPLEMENTASI
-        ================================ -->
-
-        <div class="back-wrap">
-
-            <a href="implementasi.html" class="back">
-                ← KEMBALI KE IMPLEMENTASI
-            </a>
-
-        </div>
-
-
-    </div>
-
-
-    <!-- ===============================
-         FOOTER
-    ================================ -->
-
-    <div class="team-footer">
-
-        <h2>TEAM 4K+SHITSUKE LOGISTIK KARAWANG</h2>
-
-        <p>
-            BERSAMA MENJAGA TEMPAT KERJA YANG RAPI, BERSIH, AMAN DAN PRODUKTIF
-        </p>
-
-    </div>
-
 
 </div>
 
