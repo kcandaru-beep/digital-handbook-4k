@@ -26,6 +26,10 @@ body {
     text-align: center;
 }
 
+/* =========================
+   HEADER
+========================= */
+
 .logo {
     font-size: 48px;
     margin-bottom: 5px;
@@ -43,11 +47,17 @@ h1 {
     color: #d9e4ef;
 }
 
+/* =========================
+   MENU UTAMA
+========================= */
+
 .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
+
+/* CARD MENU */
 
 .card {
     background: #ffffff;
@@ -56,10 +66,12 @@ h1 {
     min-height: 270px;
     padding: 45px 25px;
     border-radius: 25px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     transition: 0.3s;
 }
@@ -86,34 +98,68 @@ h1 {
     color: #5c6670;
 }
 
-/* TOMBOL IMPLEMENTASI */
+/* =========================
+   TOMBOL IMPLEMENTASI
+   LEBIH RINGKAS
+========================= */
+
 .implementasi {
     grid-column: 1 / -1;
-    min-height: 220px;
+
+    min-height: 130px;
+    padding: 20px 40px;
+
     background: linear-gradient(135deg, #1563a8, #0b2b4c);
     color: white;
-    border: 3px solid white;
+
+    border: 2px solid rgba(255,255,255,0.7);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.implementasi .icon {
+    font-size: 50px;
+    margin: 0;
+}
+
+.implementasi-text {
+    text-align: left;
 }
 
 .implementasi h2 {
     color: white;
-    font-size: 38px;
+    font-size: 32px;
+    margin: 0 0 8px;
 }
 
 .implementasi p {
     color: #d9e4ef;
-    font-size: 22px;
+    font-size: 18px;
+    margin: 0;
 }
 
 .implementasi:hover {
     background: linear-gradient(135deg, #1b75c0, #10395f);
 }
 
+/* =========================
+   FOOTER
+========================= */
+
 .footer {
     margin-top: 35px;
     color: #d9e4ef;
     font-size: 15px;
 }
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 700px) {
 
@@ -146,14 +192,36 @@ h1 {
 
     .implementasi {
         grid-column: auto;
+        min-height: 120px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .implementasi-text {
+        text-align: center;
+    }
+
+    .implementasi .icon {
+        font-size: 40px;
+    }
+
+    .implementasi h2 {
+        font-size: 26px;
+    }
+
+    .implementasi p {
+        font-size: 16px;
     }
 }
+
 </style>
 </head>
 
 <body>
 
 <div class="container">
+
+    <!-- HEADER -->
 
     <div class="logo">📘</div>
 
@@ -163,40 +231,85 @@ h1 {
         SHITSUKE • Team Logistic Karawang
     </div>
 
+
+    <!-- MENU -->
+
     <div class="menu">
+
+        <!-- HAND BOOK -->
 
         <a href="handbook.html" class="card">
             <div class="icon">📖</div>
+
             <h2>HAND BOOK 4K</h2>
-            <p>Informasi dan panduan utama</p>
+
+            <p>
+                Informasi dan panduan utama
+            </p>
         </a>
+
+
+        <!-- STANDARISASI -->
 
         <a href="standarisasi.html" class="card">
             <div class="icon">📋</div>
+
             <h2>STANDARISASI</h2>
-            <p>Standard kerja dan aturan</p>
+
+            <p>
+                Standard kerja dan aturan
+            </p>
         </a>
+
+
+        <!-- KAIZEN -->
 
         <a href="kaizen.html" class="card">
             <div class="icon">🎯</div>
+
             <h2>KAIZEN</h2>
-            <p>Continuous Improvement</p>
+
+            <p>
+                Continuous Improvement
+            </p>
         </a>
+
+
+        <!-- VISUAL MANAGEMENT -->
 
         <a href="visual.html" class="card">
             <div class="icon">📊</div>
+
             <h2>VISUAL MANAGEMENT</h2>
-            <p>Informasi visual area kerja</p>
+
+            <p>
+                Informasi visual area kerja
+            </p>
         </a>
 
-        <!-- TOMBOL IMPLEMENTASI -->
+
+        <!-- IMPLEMENTASI -->
+
         <a href="implementasi.html" class="card implementasi">
+
             <div class="icon">🏭</div>
-            <h2>IMPLEMENTASI</h2>
-            <p>Dokumentasi implementasi 4K+Shitsuke</p>
+
+            <div class="implementasi-text">
+
+                <h2>IMPLEMENTASI</h2>
+
+                <p>
+                    Dokumentasi implementasi 4K+Shitsuke
+                </p>
+
+            </div>
+
         </a>
 
     </div>
+
+
+    <!-- FOOTER -->
 
     <div class="footer">
         Continuous Improvement • Discipline • Standardization
