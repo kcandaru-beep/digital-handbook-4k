@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Digital Handbook 4K</title>
+<title>Implementasi 4K+Shitsuke</title>
 
 <style>
+
 * {
     box-sizing: border-box;
 }
@@ -26,9 +27,7 @@ body {
     text-align: center;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 .logo {
     font-size: 48px;
@@ -47,17 +46,14 @@ h1 {
     color: #d9e4ef;
 }
 
-/* =========================
-   MENU UTAMA
-========================= */
+
+/* MENU IMPLEMENTASI */
 
 .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
-
-/* CARD MENU */
 
 .card {
     background: #ffffff;
@@ -98,68 +94,34 @@ h1 {
     color: #5c6670;
 }
 
-/* =========================
-   TOMBOL IMPLEMENTASI
-   LEBIH RINGKAS
-========================= */
 
-.implementasi {
-    grid-column: 1 / -1;
+/* TOMBOL KEMBALI */
 
-    min-height: 130px;
-    padding: 20px 40px;
+.back {
+    display: inline-block;
+    margin-top: 45px;
 
-    background: linear-gradient(135deg, #1563a8, #0b2b4c);
+    padding: 18px 45px;
+
     color: white;
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: bold;
 
     border: 2px solid rgba(255,255,255,0.7);
+    border-radius: 50px;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    gap: 25px;
+    transition: 0.3s;
 }
 
-.implementasi .icon {
-    font-size: 50px;
-    margin: 0;
+.back:hover {
+    background: white;
+    color: #17466f;
 }
 
-.implementasi-text {
-    text-align: left;
-}
 
-.implementasi h2 {
-    color: white;
-    font-size: 32px;
-    margin: 0 0 8px;
-}
-
-.implementasi p {
-    color: #d9e4ef;
-    font-size: 18px;
-    margin: 0;
-}
-
-.implementasi:hover {
-    background: linear-gradient(135deg, #1b75c0, #10395f);
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-.footer {
-    margin-top: 35px;
-    color: #d9e4ef;
-    font-size: 15px;
-}
-
-/* =========================
-   MOBILE
-========================= */
+/* RESPONSIVE HP */
 
 @media (max-width: 700px) {
 
@@ -190,27 +152,10 @@ h1 {
         font-size: 25px;
     }
 
-    .implementasi {
-        grid-column: auto;
-        min-height: 120px;
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .implementasi-text {
-        text-align: center;
-    }
-
-    .implementasi .icon {
-        font-size: 40px;
-    }
-
-    .implementasi h2 {
-        font-size: 26px;
-    }
-
-    .implementasi p {
-        font-size: 16px;
+    .back {
+        margin-top: 35px;
+        font-size: 17px;
+        padding: 15px 30px;
     }
 }
 
@@ -221,99 +166,50 @@ h1 {
 
 <div class="container">
 
-    <!-- HEADER -->
+    <div class="logo">🏭</div>
 
-    <div class="logo">📘</div>
-
-    <h1>DIGITAL HANDBOOK 4K</h1>
+    <h1>IMPLEMENTASI 4K</h1>
 
     <div class="subtitle">
-        SHITSUKE • Team Logistic Karawang
+        Dokumentasi Implementasi 4K+Shitsuke
     </div>
 
-
-    <!-- MENU -->
 
     <div class="menu">
 
-        <!-- HAND BOOK -->
-
-        <a href="handbook.html" class="card">
-            <div class="icon">📖</div>
-
-            <h2>HAND BOOK 4K</h2>
-
-            <p>
-                Informasi dan panduan utama
-            </p>
-        </a>
-
-
-        <!-- STANDARISASI -->
-
-        <a href="standarisasi.html" class="card">
-            <div class="icon">📋</div>
-
-            <h2>STANDARISASI</h2>
-
-            <p>
-                Standard kerja dan aturan
-            </p>
-        </a>
-
-
-        <!-- KAIZEN -->
-
-        <a href="kaizen.html" class="card">
-            <div class="icon">🎯</div>
-
-            <h2>KAIZEN</h2>
-
-            <p>
-                Continuous Improvement
-            </p>
-        </a>
-
-
-        <!-- VISUAL MANAGEMENT -->
-
-        <a href="visual.html" class="card">
-            <div class="icon">📊</div>
-
-            <h2>VISUAL MANAGEMENT</h2>
-
-            <p>
-                Informasi visual area kerja
-            </p>
-        </a>
-
-
-        <!-- IMPLEMENTASI -->
-
-        <a href="implementasi.html" class="card implementasi">
+        <a href="pkcic.html" class="card">
 
             <div class="icon">🏭</div>
 
-            <div class="implementasi-text">
+            <h2>PKCIC</h2>
 
-                <h2>IMPLEMENTASI</h2>
+            <p>
+                Dokumentasi implementasi area PKCIC
+            </p>
 
-                <p>
-                    Dokumentasi implementasi 4K+Shitsuke
-                </p>
+        </a>
 
-            </div>
+
+        <a href="pknci.html" class="card">
+
+            <div class="icon">🏭</div>
+
+            <h2>PKNCI</h2>
+
+            <p>
+                Dokumentasi implementasi area PKNCI
+            </p>
 
         </a>
 
     </div>
 
 
-    <!-- FOOTER -->
+    <!-- LANGSUNG KEMBALI KE INDEX -->
 
-    <div class="footer">
-        Continuous Improvement • Discipline • Standardization
-    </div>
+    <a href="index.html" class="back">
+        ← KEMBALI KE HALAMAN UTAMA
+    </a>
 
 </div>
 
