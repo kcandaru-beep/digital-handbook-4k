@@ -4,100 +4,1171 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kaizen - Digital Handbook</title>
+<title>Kaizen - Digital Handbook 4K</title>
 
 <style>
-*{box-sizing:border-box;}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
 
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#0b2b4c,#1563a8);
-color:white;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#0b2b4c,#1563a8);
+    color:#16324f;
 }
+
+/* =========================
+   HEADER
+========================= */
 
 .header{
-text-align:center;
-padding:35px 20px 20px;
+    text-align:center;
+    padding:32px 20px 24px;
+    color:white;
 }
+
+.header-icon{
+    font-size:42px;
+    margin-bottom:8px;
+}
+
+.header h1{
+    margin:0;
+    font-size:42px;
+    letter-spacing:2px;
+}
+
+.header p{
+    margin:10px 0 0;
+    font-size:18px;
+    color:#dce8f4;
+    letter-spacing:1px;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
 
 .content{
-max-width:950px;
-margin:auto;
-padding:20px;
+    max-width:1180px;
+    margin:auto;
+    padding:0 20px 40px;
 }
 
-.card{
-background:white;
-color:#16324f;
-padding:25px;
-margin-bottom:20px;
-border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+/* =========================
+   HERO CARD
+========================= */
+
+.hero-card{
+    background:linear-gradient(135deg,#ffffff,#eef4f8);
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 10px 28px rgba(0,0,0,.25);
+    margin-bottom:24px;
 }
 
-.card h2{color:#1563a8;}
-
-.item{
-background:#f2f6fa;
-padding:14px;
-margin:10px 0;
-border-left:5px solid #1563a8;
-border-radius:7px;
+.hero-image{
+    width:100%;
+    display:block;
+    max-height:1500px;
+    object-fit:contain;
+    background:#ffffff;
 }
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro-card{
+    background:white;
+    border-radius:20px;
+    padding:28px;
+    margin-bottom:24px;
+    box-shadow:0 8px 22px rgba(0,0,0,.20);
+}
+
+.intro-card h2{
+    margin:0 0 14px;
+    color:#123b66;
+    font-size:28px;
+}
+
+.intro-card p{
+    margin:0;
+    font-size:17px;
+    line-height:1.7;
+    color:#34495e;
+}
+
+.highlight{
+    margin-top:20px;
+    background:linear-gradient(135deg,#123b66,#1d6eb7);
+    color:white;
+    padding:18px 22px;
+    border-radius:12px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+    color:white;
+    font-size:27px;
+    font-weight:bold;
+    text-align:center;
+    margin:35px 0 20px;
+    letter-spacing:.5px;
+}
+
+
+/* =========================
+   PRINCIPLE GRID
+========================= */
+
+.principle-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:14px;
+}
+
+.principle-card{
+    background:white;
+    border-radius:16px;
+    padding:20px 16px;
+    text-align:center;
+    box-shadow:0 7px 18px rgba(0,0,0,.18);
+    transition:.25s;
+}
+
+.principle-card:hover{
+    transform:translateY(-5px);
+}
+
+.principle-number{
+    width:42px;
+    height:42px;
+    margin:0 auto 12px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    background:#1563a8;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.principle-card h3{
+    margin:0 0 10px;
+    font-size:15px;
+    color:#163d68;
+}
+
+.principle-card p{
+    margin:0;
+    font-size:14px;
+    line-height:1.5;
+    color:#4d5d6b;
+}
+
+
+/* =========================
+   KAIZEN FLOW
+========================= */
+
+.flow-card{
+    background:white;
+    border-radius:20px;
+    padding:28px;
+    box-shadow:0 8px 22px rgba(0,0,0,.20);
+    margin-top:20px;
+}
+
+.flow-card h2{
+    margin:0 0 24px;
+    text-align:center;
+    color:#123b66;
+}
+
+.flow{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:12px;
+}
+
+.flow-item{
+    background:#f2f6fa;
+    border-radius:14px;
+    padding:18px 12px;
+    text-align:center;
+    border-top:5px solid #1563a8;
+}
+
+.flow-number{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    margin:0 auto 12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#1563a8;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.flow-item h3{
+    margin:0 0 8px;
+    font-size:14px;
+    color:#163d68;
+}
+
+.flow-item p{
+    margin:0;
+    font-size:13px;
+    color:#566573;
+    line-height:1.45;
+}
+
+
+/* =========================
+   EXAMPLE KAIZEN
+========================= */
+
+.example-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.example-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 7px 20px rgba(0,0,0,.20);
+}
+
+.example-header{
+    background:#123b66;
+    color:white;
+    padding:15px 20px;
+    font-weight:bold;
+    font-size:17px;
+}
+
+.example-body{
+    padding:20px;
+}
+
+.example-row{
+    padding:12px 0;
+    border-bottom:1px solid #e5e9ed;
+}
+
+.example-row:last-child{
+    border-bottom:none;
+}
+
+.example-label{
+    display:block;
+    font-weight:bold;
+    color:#1563a8;
+    margin-bottom:5px;
+}
+
+.example-text{
+    color:#4d5d6b;
+    line-height:1.5;
+}
+
+
+/* =========================
+   REMINDER
+========================= */
+
+.reminder{
+    margin-top:25px;
+    background:linear-gradient(135deg,#0d3a63,#0f6a4f);
+    color:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 8px 22px rgba(0,0,0,.25);
+}
+
+.reminder h2{
+    margin:0 0 12px;
+    font-size:27px;
+}
+
+.reminder p{
+    margin:0;
+    font-size:18px;
+    line-height:1.6;
+}
+
+
+/* =========================
+   SUCCESS TIPS
+========================= */
+
+.tips{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:14px;
+}
+
+.tip{
+    background:white;
+    border-radius:16px;
+    padding:20px 14px;
+    text-align:center;
+    box-shadow:0 7px 18px rgba(0,0,0,.18);
+}
+
+.tip-icon{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.tip h3{
+    margin:0 0 8px;
+    color:#123b66;
+    font-size:15px;
+}
+
+.tip p{
+    margin:0;
+    color:#566573;
+    font-size:13px;
+    line-height:1.45;
+}
+
+
+/* =========================
+   BOTTOM MESSAGE
+========================= */
+
+.bottom-message{
+    background:#082b4d;
+    color:white;
+    margin-top:26px;
+    padding:24px;
+    border-radius:18px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    line-height:1.5;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
 
 .back{
-display:block;
-width:fit-content;
-margin:30px auto 40px;
-padding:14px 28px;
-border:1px solid white;
-border-radius:25px;
-color:white;
-text-decoration:none;
-font-weight:bold;
+    display:block;
+    width:fit-content;
+    margin:32px auto 10px;
+    padding:15px 32px;
+    border:2px solid white;
+    border-radius:30px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.25s;
 }
+
+.back:hover{
+    background:white;
+    color:#1563a8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    text-align:center;
+    color:#dbe8f4;
+    font-size:14px;
+    padding:10px 20px 30px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:900px){
+
+    .principle-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .flow{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .tips{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .header{
+        padding:25px 15px 18px;
+    }
+
+    .header h1{
+        font-size:30px;
+    }
+
+    .header p{
+        font-size:14px;
+    }
+
+    .content{
+        padding:0 12px 30px;
+    }
+
+    .hero-card{
+        border-radius:15px;
+    }
+
+    .intro-card,
+    .flow-card{
+        padding:20px;
+        border-radius:16px;
+    }
+
+    .intro-card h2{
+        font-size:23px;
+    }
+
+    .intro-card p{
+        font-size:15px;
+    }
+
+    .section-title{
+        font-size:23px;
+    }
+
+    .principle-grid{
+        grid-template-columns:1fr;
+    }
+
+    .flow{
+        grid-template-columns:1fr;
+    }
+
+    .example-grid{
+        grid-template-columns:1fr;
+    }
+
+    .tips{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .bottom-message{
+        font-size:16px;
+        padding:20px;
+    }
+
+}
+
 </style>
+
 </head>
 
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <div class="header">
-<h1>🎯 KAIZEN</h1>
-<p>CONTINUOUS IMPROVEMENT</p>
+
+    <div class="header-icon">🎯</div>
+
+    <h1>KAIZEN</h1>
+
+    <p>CONTINUOUS IMPROVEMENT • TEAM LOGISTIC KARAWANG</p>
+
 </div>
+
 
 <div class="content">
 
-<div class="card">
-<h2>APA ITU KAIZEN?</h2>
-<p>Kaizen adalah upaya perbaikan secara terus-menerus yang dilakukan secara bertahap untuk meningkatkan proses kerja, kualitas, produktivitas dan efisiensi.</p>
-<div class="item"><strong>KAIZEN = PERUBAHAN KE ARAH YANG LEBIH BAIK</strong></div>
+
+    <!-- =========================
+         GAMBAR UTAMA KAIZEN
+    ========================= -->
+
+    <div class="hero-card">
+
+        <img
+        src="ChatGPT Image Aug 22, 2026, 07_39_38 PM.png"
+        alt="Infografis Kaizen Continuous Improvement PKCIC"
+        class="hero-image">
+
+    </div>
+
+
+    <!-- =========================
+         APA ITU KAIZEN
+    ========================= -->
+
+    <div class="intro-card">
+
+        <h2>💡 APA ITU KAIZEN?</h2>
+
+        <p>
+            Kaizen adalah budaya perbaikan secara terus-menerus yang dilakukan
+            melalui langkah-langkah sederhana untuk meningkatkan proses kerja,
+            kualitas, produktivitas, efisiensi, serta menciptakan lingkungan
+            kerja yang lebih baik.
+        </p>
+
+        <div class="highlight">
+
+            KAIZEN = PERUBAHAN KECIL YANG DILAKUKAN SECARA KONSISTEN
+            UNTUK MENCIPTAKAN PERBAIKAN YANG LEBIH BESAR
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         5 PRINSIP KAIZEN
+    ========================= -->
+
+    <div class="section-title">
+
+        5 PRINSIP KAIZEN
+
+    </div>
+
+
+    <div class="principle-grid">
+
+
+        <div class="principle-card">
+
+            <div class="principle-number">1</div>
+
+            <h3>CONTINUOUS IMPROVEMENT</h3>
+
+            <p>
+                Perbaikan dilakukan secara terus-menerus,
+                bukan hanya sekali.
+            </p>
+
+        </div>
+
+
+        <div class="principle-card">
+
+            <div class="principle-number">2</div>
+
+            <h3>PROBLEM = OPPORTUNITY</h3>
+
+            <p>
+                Setiap masalah merupakan peluang
+                untuk menemukan perbaikan.
+            </p>
+
+        </div>
+
+
+        <div class="principle-card">
+
+            <div class="principle-number">3</div>
+
+            <h3>START SMALL</h3>
+
+            <p>
+                Perbaikan dapat dimulai dari hal kecil
+                yang memberikan manfaat nyata.
+            </p>
+
+        </div>
+
+
+        <div class="principle-card">
+
+            <div class="principle-number">4</div>
+
+            <h3>TEAM INVOLVEMENT</h3>
+
+            <p>
+                Seluruh anggota team dapat terlibat
+                dalam menemukan dan melakukan perbaikan.
+            </p>
+
+        </div>
+
+
+        <div class="principle-card">
+
+            <div class="principle-number">5</div>
+
+            <h3>STANDARDIZATION</h3>
+
+            <p>
+                Perbaikan yang berhasil perlu dijadikan
+                standar agar dapat dipertahankan.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         SIKLUS KAIZEN
+    ========================= -->
+
+    <div class="flow-card">
+
+        <h2>🔄 SIKLUS KAIZEN</h2>
+
+
+        <div class="flow">
+
+
+            <div class="flow-item">
+
+                <div class="flow-number">1</div>
+
+                <h3>TEMUKAN MASALAH</h3>
+
+                <p>
+                    Amati kondisi area kerja dan temukan
+                    gap terhadap standar.
+                </p>
+
+            </div>
+
+
+            <div class="flow-item">
+
+                <div class="flow-number">2</div>
+
+                <h3>ANALISA PENYEBAB</h3>
+
+                <p>
+                    Cari penyebab utama agar perbaikan
+                    tidak hanya mengatasi gejala.
+                </p>
+
+            </div>
+
+
+            <div class="flow-item">
+
+                <div class="flow-number">3</div>
+
+                <h3>BUAT PERBAIKAN</h3>
+
+                <p>
+                    Tentukan ide dan rencana perbaikan
+                    yang sederhana dan efektif.
+                </p>
+
+            </div>
+
+
+            <div class="flow-item">
+
+                <div class="flow-number">4</div>
+
+                <h3>IMPLEMENTASI</h3>
+
+                <p>
+                    Jalankan perbaikan sesuai rencana
+                    bersama anggota team.
+                </p>
+
+            </div>
+
+
+            <div class="flow-item">
+
+                <div class="flow-number">5</div>
+
+                <h3>EVALUASI</h3>
+
+                <p>
+                    Bandingkan kondisi sebelum dan sesudah
+                    untuk memastikan hasil.
+                </p>
+
+            </div>
+
+
+            <div class="flow-item">
+
+                <div class="flow-number">6</div>
+
+                <h3>STANDARISASI</h3>
+
+                <p>
+                    Jadikan hasil perbaikan sebagai
+                    standar kerja baru.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         CONTOH KAIZEN
+    ========================= -->
+
+    <div class="section-title">
+
+        CONTOH KAIZEN DI AREA OFFICE PKCIC
+
+    </div>
+
+
+    <div class="example-grid">
+
+
+        <div class="example-card">
+
+            <div class="example-header">
+
+                📁 PERBAIKAN PENATAAN DOKUMEN
+
+            </div>
+
+
+            <div class="example-body">
+
+
+                <div class="example-row">
+
+                    <span class="example-label">SEBELUM</span>
+
+                    <div class="example-text">
+
+                        Dokumen sulit ditemukan dan belum
+                        tersusun berdasarkan kategori.
+
+                    </div>
+
+                </div>
+
+
+                <div class="example-row">
+
+                    <span class="example-label">KAIZEN</span>
+
+                    <div class="example-text">
+
+                        Membuat pengelompokan, label,
+                        dan lokasi penyimpanan yang jelas.
+
+                    </div>
+
+                </div>
+
+
+                <div class="example-row">
+
+                    <span class="example-label">HASIL</span>
+
+                    <div class="example-text">
+
+                        Dokumen lebih mudah ditemukan,
+                        waktu pencarian berkurang,
+                        dan area terlihat lebih rapi.
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="example-card">
+
+            <div class="example-header">
+
+                🖥️ PERBAIKAN AREA KERJA
+
+            </div>
+
+
+            <div class="example-body">
+
+
+                <div class="example-row">
+
+                    <span class="example-label">SEBELUM</span>
+
+                    <div class="example-text">
+
+                        Meja kerja penuh dengan barang
+                        yang tidak diperlukan.
+
+                    </div>
+
+                </div>
+
+
+                <div class="example-row">
+
+                    <span class="example-label">KAIZEN</span>
+
+                    <div class="example-text">
+
+                        Melakukan sortir barang,
+                        menentukan tempat penyimpanan,
+                        dan menerapkan visual standard.
+
+                    </div>
+
+                </div>
+
+
+                <div class="example-row">
+
+                    <span class="example-label">HASIL</span>
+
+                    <div class="example-text">
+
+                        Area kerja menjadi lebih rapi,
+                        nyaman, dan mendukung produktivitas.
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="example-card">
+
+            <div class="example-header">
+
+                📊 PERBAIKAN INFORMASI AREA
+
+            </div>
+
+
+            <div class="example-body">
+
+
+                <div class="example-row">
+
+                    <span class="example-label">SEBELUM</span>
+
+                    <div class="example-text">
+
+                        Informasi penting tersebar dan
+                        tidak mudah dilihat.
+
+                    </div>
+
+                </div>
+
+
+                <div class="example-row">
+
+                    <span class="example-label">KAIZEN</span>
+
+                    <div class="example-text">
+
+                        Membuat information board untuk
+                        menampilkan target, aktivitas,
+                        jadwal, dan informasi penting.
+
+                    </div>
+
+                </div>
+
+
+                <div class="example-row">
+
+                    <span class="example-label">HASIL</span>
+
+                    <div class="example-text">
+
+                        Informasi lebih mudah dipahami
+                        dan komunikasi area menjadi
+                        lebih efektif.
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="example-card">
+
+            <div class="example-header">
+
+                🏢 PERBAIKAN PENATAAN PERALATAN
+
+            </div>
+
+
+            <div class="example-body">
+
+
+                <div class="example-row">
+
+                    <span class="example-label">SEBELUM</span>
+
+                    <div class="example-text">
+
+                        Peralatan belum memiliki lokasi
+                        yang jelas dan sulit dikontrol.
+
+                    </div>
+
+                </div>
+
+
+                <div class="example-row">
+
+                    <span class="example-label">KAIZEN</span>
+
+                    <div class="example-text">
+
+                        Menentukan lokasi, membuat label,
+                        line marking, dan standar
+                        penyimpanan.
+
+                    </div>
+
+                </div>
+
+
+                <div class="example-row">
+
+                    <span class="example-label">HASIL</span>
+
+                    <div class="example-text">
+
+                        Peralatan lebih mudah ditemukan,
+                        area lebih aman, dan alur kerja
+                        menjadi lebih lancar.
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         INGAT
+    ========================= -->
+
+    <div class="reminder">
+
+        <h2>💡 KAIZEN INGAT!</h2>
+
+        <p>
+
+            Masalah yang ditemukan bukan untuk disalahkan,
+            tetapi untuk diperbaiki bersama.
+
+            <br><br>
+
+            Perbaikan kecil yang dilakukan secara konsisten
+            dapat menghasilkan perubahan yang besar.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- =========================
+         TIPS SUKSES
+    ========================= -->
+
+    <div class="section-title">
+
+        TIPS SUKSES KAIZEN
+
+    </div>
+
+
+    <div class="tips">
+
+
+        <div class="tip">
+
+            <div class="tip-icon">👥</div>
+
+            <h3>LIBATKAN TEAM</h3>
+
+            <p>
+                Perbaikan menjadi lebih kuat
+                jika dilakukan bersama.
+            </p>
+
+        </div>
+
+
+        <div class="tip">
+
+            <div class="tip-icon">👀</div>
+
+            <h3>AMATI KONDISI</h3>
+
+            <p>
+                Biasakan melihat kondisi
+                dan menemukan peluang perbaikan.
+            </p>
+
+        </div>
+
+
+        <div class="tip">
+
+            <div class="tip-icon">💡</div>
+
+            <h3>IDE SEDERHANA</h3>
+
+            <p>
+                Tidak perlu menunggu ide besar
+                untuk mulai melakukan Kaizen.
+            </p>
+
+        </div>
+
+
+        <div class="tip">
+
+            <div class="tip-icon">🏆</div>
+
+            <h3>APRESIASI</h3>
+
+            <p>
+                Berikan apresiasi terhadap
+                setiap kontribusi perbaikan.
+            </p>
+
+        </div>
+
+
+        <div class="tip">
+
+            <div class="tip-icon">📈</div>
+
+            <h3>JADIKAN BUDAYA</h3>
+
+            <p>
+                Jadikan Kaizen sebagai bagian
+                dari aktivitas kerja sehari-hari.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         PENUTUP
+    ========================= -->
+
+    <div class="bottom-message">
+
+        KAIZEN BUKAN SEKALI SAJA, TAPI TERUS-MENERUS.
+
+        <br>
+
+        SETIAP HARI • SETIAP ORANG • SETIAP AREA
+
+        <br><br>
+
+        MENUJU AREA KERJA YANG LEBIH BAIK
+
+    </div>
+
+
+
+    <!-- =========================
+         KEMBALI KE MENU
+    ========================= -->
+
+    <a href="index.html" class="back">
+
+        ← KEMBALI KE MENU UTAMA
+
+    </a>
+
+
 </div>
 
-<div class="card">
-<h2>PRINSIP KAIZEN</h2>
-<div class="item">① Perbaikan dilakukan secara terus-menerus.</div>
-<div class="item">② Setiap masalah merupakan peluang perbaikan.</div>
-<div class="item">③ Perbaikan dapat dimulai dari hal kecil.</div>
-<div class="item">④ Melibatkan seluruh anggota team.</div>
-<div class="item">⑤ Hasil perbaikan perlu distandarkan.</div>
-</div>
 
-<div class="card">
-<h2>LANGKAH SEDERHANA KAIZEN</h2>
-<div class="item"><strong>① TEMUKAN MASALAH</strong></div>
-<div class="item"><strong>② ANALISA PENYEBAB</strong></div>
-<div class="item"><strong>③ BUAT PERBAIKAN</strong></div>
-<div class="item"><strong>④ LAKUKAN IMPLEMENTASI</strong></div>
-<div class="item"><strong>⑤ EVALUASI DAN STANDARISASI</strong></div>
-</div>
+<div class="footer">
 
-<a href="index.html" class="back">
-← KEMBALI KE MENU
-</a>
+    DIGITAL HANDBOOK 4K+SHITSUKE • TEAM LOGISTIC KARAWANG
 
 </div>
+
 
 </body>
 </html>
